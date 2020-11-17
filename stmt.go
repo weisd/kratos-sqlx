@@ -5,7 +5,7 @@ import (
 	sql "database/sql"
 
 	sqlk "github.com/go-kratos/kratos/pkg/database/sql"
-	"github.com/go-kratos/kratos/pkg/database/sqlx/reflectx"
+	"github.com/weisd/kratos-sqlx/reflectx"
 )
 
 // Stmt is an sqlx wrapper around sql.Stmt with extra functionality

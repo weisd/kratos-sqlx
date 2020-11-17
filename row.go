@@ -10,7 +10,7 @@ import (
 
 	sqlk "github.com/go-kratos/kratos/pkg/database/sql"
 
-	"github.com/go-kratos/kratos/pkg/database/sqlx/reflectx"
+	"github.com/weisd/kratos-sqlx/reflectx"
 )
 
 // Row is a reimplementation of sql.Row in order to gain access to the underlying

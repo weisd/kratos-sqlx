@@ -6,7 +6,7 @@ import (
 	"reflect"
 
 	sqlk "github.com/go-kratos/kratos/pkg/database/sql"
-	"github.com/go-kratos/kratos/pkg/database/sqlx/reflectx"
+	"github.com/weisd/kratos-sqlx/reflectx"
 )
 
 // Tx is an sqlx wrapper around sql.Tx with extra functionality

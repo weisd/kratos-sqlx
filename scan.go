@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/go-kratos/kratos/pkg/database/sqlx/reflectx"
+	"github.com/weisd/kratos-sqlx/reflectx"
 )
 
 // Although the NameMapper is convenient, in practice it should not

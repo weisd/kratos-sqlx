@@ -6,7 +6,7 @@ import (
 	"reflect"
 
 	sqlk "github.com/go-kratos/kratos/pkg/database/sql"
-	"github.com/go-kratos/kratos/pkg/database/sqlx/reflectx"
+	"github.com/weisd/kratos-sqlx/reflectx"
 )
 
 // Rows is a wrapper around sql.Rows which caches costly reflect operations
