@@ -105,3 +105,11 @@ func (db *DB) Master() *DB {
 	d := db.DB.Master()
 	return &DB{DB: d, driverName: db.driverName, unsafe: db.unsafe, Mapper: db.Mapper}
 }
+
+// Unsafe returns a version of DB which will silently succeed to scan when
+// columns in the SQL result have no fields in the destination struct.
+// sqlx.Stmt and sqlx.Tx which are created from this DB will inherit its
+// safety behavior.
+func (db *DB) Unsafe() *DB {
+	return &DB{DB: db.DB, driverName: db.driverName, unsafe: true, Mapper: db.Mapper}
+}
